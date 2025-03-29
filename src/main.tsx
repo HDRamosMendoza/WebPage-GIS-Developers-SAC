@@ -9,11 +9,42 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 import "./index.css";
-import { CssBaseline } from "@mui/material"
+import { CssBaseline, ThemeProvider, createTheme } from "@mui/material"
+
+/*
+import { ThemeOptions, ThemeProvider } from '@mui/material/styles';
+
+export const themeOptions: ThemeOptions = {
+  palette: {
+    mode: 'light',
+    primary: {
+      main: '#3f51b5'
+    },
+    secondary: {
+      main: '#f50057'
+    }
+  },
+};
+*/
+
+const theme = createTheme({
+  palette: {
+    mode: 'light',
+    primary: {
+      main: '#3f51b5'
+    },
+    secondary: {
+      main: '#f50057'
+    }
+  },
+});
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <CssBaseline />
-    <App />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <App />
+    </ThemeProvider>
+    
   </StrictMode>,
 )

@@ -28,7 +28,7 @@ const Footer = () => {
 </Container> */
     return (
         <footer>
-            <Grid container spacing={2} sx={{ pt:5, bgcolor:"#C2C2C2" }}>
+            <Grid container spacing={2} sx={{ pt:8, bgcolor:"#C2C2C2" }}>
                 <Grid size={{ xs:12, sm:6, md:6 }}>
                     <Typography color="white" fontWeight="bold" fontSize="20px" sx={{ pb:3 }}>GIS Developers S.A.C.</Typography>
                     <Typography color="#80879A" component="p">
@@ -125,7 +125,7 @@ const Footer = () => {
                     </Paper>   
                 </Grid>
             </Grid>
-            <Grid container spacing={2} sx={{ pt:3, pb:3, bgcolor:"#C2C2C2" }}>
+            <Grid container spacing={2} sx={{ pt:4, pb:4, bgcolor:"#C2C2C2" }}>
                 <Grid size={{ xs:12, sm:12, md:12 }}>
                     <Typography color="white" fontSize="18px" textAlign="center"> 
                         © 2025 GIS Developers SAC | Derechos reservados
